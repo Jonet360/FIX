@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Absensi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/88f05daeb4.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/jpg" href="icon.png">
+  </head>
+  <body>
+    <div class="logo-container">
+      <img src="icon.png" alt="Logo" class="logo">
+    </div>
+    <div class="form-container">
+      <h2>Formulir Absensi</h2>
+      <form id="absensiForm">
+        
+        <div class="nameandicon">
+          <label for="nama">Nama:</label>
+          <select id="nama" name="nama" required>
+            <option value="Agus">Agus</option>
+            <option value="Eko">Eko</option>
+            <option value="Tony Stark">Tony Stark</option>
+          
+          </select>
+
+        </div>
+
+        <div class="skerjaandicon">
+          <label for="skerja">Status:</label>
+          <select id="skerja" name="skerja" required>
+            <option value="office">office</option>
+            <option value="project">project</option>
+          </select>
+        </div>
+        
+        <div class="datewithicon">
+          <label for="jam">Date:</label>
+          <input type="text" id="jam" name="jam" readonly required>
+        </div>
+        
+        <div class="statuswithicon">
+        <label for="statusabsensi">Status Absensi:</label>
+          <select id="statusabsensi" name="statusAbsensi" required>
+            <option value="Hadir">Hadir</option>
+            <option value="Izin">Izin</option>
+            <option value="Sakit">Sakit</option>
+            <option value="Dinas Luar">Dinas Luar</option>
+          </select>
+
+        </div>
+        
+
+        <div class="lokasi with icon">
+          <label for="lokasi">Lokasi:</label>
+          <input type="text" id="lokasi" name="lokasi" readonly required>
+        </div>
+        
+
+        <div class="submitwithicon">
+          <button type="submit">Submit</button>
+        </div>
+
+
+        <div class="text">
+        <p>TOLONG AKTIFKAAN LOKASI DI DEVICE ANDA</p>
+        </div>
+
+
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
